@@ -1,0 +1,18 @@
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $color-grey-light-3;
+  padding: 0 10rem;
+  height: 12.5rem;
+  &__img {
+    height: 10rem;
+    width: auto;
+  }
+  &__item {
+    padding: 5rem;
+    &--img {
+      margin-right: auto;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.header {
+  height: 77.6vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../../../pics/ex2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
