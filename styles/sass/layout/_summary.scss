@@ -1,0 +1,15 @@
+.company {
+  color: $color-black;
+  padding: 5rem 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__name {
+    font-size: 2rem;
+  }
+  &__description {
+    font-size: $default-font-size;
+    text-align: center;
+  }
+}

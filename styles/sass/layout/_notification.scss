@@ -16,7 +16,41 @@
       margin-right: auto;
     }
     &--3 {
+      display: flex;
+      align-items: center;
+      &-icon {
+        margin-right: 1rem;
+        color: $color-grey-light-2;
+      }
+      font-size: 2rem;
       padding: 1.25rem 25rem;
     }
+  }
+}
+.phone {
+  transform: scaleX(-1);
+}
+.facebook {
+  transition: $color-transition;
+  &:hover {
+    color: $color-tertiary;
+  }
+}
+.youtube {
+  transition: $color-transition;
+  &:hover {
+    color: red;
+  }
+}
+.linkedin {
+  transition: $color-transition;
+  &:hover {
+    color: $color-tertiary-light;
+  }
+}
+.instgram {
+  transition: $color-transition;
+  &:hover {
+    color: #e1306c;
   }
 }

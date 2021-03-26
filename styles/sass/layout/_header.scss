@@ -1,12 +1,29 @@
 .header {
   height: 77.6vh;
   background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)
+      to bottom,
+      rgba($color-primary-light, 0.75),
+      rgba($color-primary-dark, 0.85)
     ),
-    url(../../../pics/ex2.jpg);
-  background-size: contain;
+    url(../../../pics/ex1.jpg);
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__text {
+    color: $color-white;
+    width: 50rem;
+    text-align: start;
+    transform: translate(-50%, 0);
+    text-shadow: 0 1rem 2rem rgba($color-black, 0.9);
+    &--heading {
+      text-align: center;
+      font-size: 4rem;
+    }
+    &--paragraph {
+      font-size: $default-font-size;
+      text-align: start;
+    }
+  }
 }

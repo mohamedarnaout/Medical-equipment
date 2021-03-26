@@ -1,0 +1,50 @@
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &-heading {
+    color: $color-grey-light-3;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 3rem;
+  }
+  &-btn {
+    margin: 1rem;
+    background-color: $color-tertiary-light;
+    color: $color-white;
+    padding: 1rem 4rem;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      border: 2px solid $color-tertiary-light;
+      transition: all 0.1s ease-in-out;
+    }
+    &:hover::before,
+    &:focus::before {
+      top: calc(2px * -2);
+      left: calc(2px * -2);
+      right: calc(2px * -2);
+      bottom: calc(2px * -2);
+    }
+  }
+  &_input {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

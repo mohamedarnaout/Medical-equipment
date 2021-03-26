@@ -1,0 +1,80 @@
+.footer {
+  background-color: $color-grey-dark-2;
+  padding: 10rem 20rem 5rem 20rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr, 1fr;
+  grid-row-gap: 5rem;
+  &__info {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: stretch;
+    &-logo {
+      width: 20rem;
+      height: auto;
+    }
+    &-text {
+      font-size: $default-font-size;
+    }
+  }
+  &__map {
+    &-google {
+      border: 0;
+      width: 40rem;
+      height: 20rem;
+    }
+  }
+  &__socialMedia {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-icon {
+      border-radius: 5px;
+      text-align: center;
+      color: inherit;
+      width: 8rem;
+      height: 8rem;
+      font-size: 5rem;
+      margin-right: 7rem;
+
+      &-linkedin {
+        transition: $color-transition;
+        &:hover {
+          color: $color-white;
+          background-color: $color-tertiary-light;
+        }
+      }
+      &-facebook {
+        transition: $color-transition;
+        &:hover {
+          color: $color-white;
+          background-color: $color-tertiary;
+        }
+      }
+      &-youtube {
+        transition: $color-transition;
+        &:hover {
+          color: $color-white;
+          background-color: red;
+        }
+      }
+      &-instgram {
+        transition: $color-transition;
+
+        &:hover {
+          color: $color-white;
+          background: linear-gradient(
+            45deg,
+            #fd7d28,
+            #fd1d1d,
+            #e1306c,
+            #833ab4,
+            #405de6
+          );
+        }
+      }
+    }
+  }
+}

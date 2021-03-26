@@ -1,0 +1,27 @@
+.partners {
+  background-color: $color-grey-light-2;
+  padding: 5rem 10rem 0 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__heading {
+    color: $color-black;
+    margin-bottom: 5rem;
+  }
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  &-logo {
+    filter: grayscale(100%);
+    margin-right: 10rem;
+    margin-bottom: 5rem;
+    height: 4rem;
+    width: auto;
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}
