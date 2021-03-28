@@ -20,6 +20,7 @@
     margin-bottom: 5rem;
     height: 4rem;
     width: auto;
+    transition: $color-transition;
     &:hover {
       filter: grayscale(0);
     }

@@ -35,10 +35,10 @@
 
 html {
   font-size: 62.5%; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 87em) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 70em) {
     html {
       font-size: 50%; } }
   @media only screen and (min-width: 112.5em) {
@@ -67,7 +67,7 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 50em) {
       .heading-primary--main {
         letter-spacing: 1rem;
         font-size: 5rem; } }
@@ -79,7 +79,7 @@ body {
     animation-name: moveInRight;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 50em) {
       .heading-primary--sub {
         letter-spacing: 0.5rem; } }
 
@@ -93,10 +93,10 @@ body {
   color: transparent;
   letter-spacing: 0.2rem;
   transition: all 0.2s; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 70em) {
     .heading-secondary {
       font-size: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 50em) {
     .heading-secondary {
       font-size: 2.5rem; } }
   .heading-secondary:hover {
@@ -121,19 +121,19 @@ body {
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 70em) {
     .u-margin-bottom-small {
       margin-bottom: 1rem !important; } }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 70em) {
     .u-margin-bottom-medium {
       margin-bottom: 3rem !important; } }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 70em) {
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
 
@@ -148,7 +148,7 @@ body {
 
 .u-margin-right-small {
   margin-right: 0.75rem !important; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 70em) {
     .u-margin-right-small {
       margin-right: 0.5rem !important; } }
 
@@ -261,6 +261,7 @@ body {
           background: linear-gradient(45deg, #fd7d28, #fd1d1d, #e1306c, #833ab4, #405de6); }
 
 .header {
+  position: relative;
   height: 77.6vh;
   background-image: linear-gradient(to bottom, rgba(76, 100, 90, 0.75), rgba(38, 63, 52, 0.85)), url(../../../pics/ex1.jpg);
   background-size: 100% 100%;
@@ -280,6 +281,8 @@ body {
     .header__text--paragraph {
       font-size: 1.6rem;
       text-align: start; }
+  .header__scrolled {
+    margin-top: 12.5rem; }
 
 .navigation {
   display: flex;
@@ -287,7 +290,8 @@ body {
   align-items: center;
   background-color: #ddd;
   padding: 0 10rem;
-  height: 12.5rem; }
+  height: 12.5rem;
+  z-index: 1; }
   .navigation__img {
     height: 10rem;
     width: auto; }
@@ -295,6 +299,11 @@ body {
     padding: 5rem; }
     .navigation__item--img {
       margin-right: auto; }
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%; }
 
 .notification {
   position: relative;
@@ -307,6 +316,9 @@ body {
     color: #fff; }
     .notification__text--1 {
       padding: 1.25rem 7.5rem 1.25rem 25rem; }
+      @media only screen and (max-width: 87em) {
+        .notification__text--1 {
+          padding: 1rem 7.5rem 1rem 12rem; } }
     .notification__text--2 {
       padding: 1.25rem 7.5rem;
       margin-right: auto; }
@@ -361,7 +373,8 @@ body {
     margin-right: 10rem;
     margin-bottom: 5rem;
     height: 4rem;
-    width: auto; }
+    width: auto;
+    transition: all 0.25s; }
     .partners-logo:hover {
       filter: grayscale(0); }
 

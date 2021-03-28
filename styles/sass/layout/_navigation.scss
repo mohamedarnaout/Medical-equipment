@@ -5,6 +5,7 @@
   background-color: $color-grey-light-3;
   padding: 0 10rem;
   height: 12.5rem;
+  z-index: 1;
   &__img {
     height: 10rem;
     width: auto;
@@ -15,4 +16,9 @@
       margin-right: auto;
     }
   }
+}
+.scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }

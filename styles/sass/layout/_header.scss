@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   height: 77.6vh;
   background-image: linear-gradient(
       to bottom,
@@ -25,5 +26,8 @@
       font-size: $default-font-size;
       text-align: start;
     }
+  }
+  &__scrolled {
+    margin-top: 12.5rem;
   }
 }
