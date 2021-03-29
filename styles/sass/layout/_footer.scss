@@ -2,30 +2,77 @@
   background-color: $color-grey-dark-2;
   padding: 10rem 20rem 5rem 20rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
   grid-template-rows: 2fr, 1fr;
+  grid-template-areas:
+    "info map form"
+    "socialMedia socialMedia socialMedia";
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(20rem, 1fr)), 1fr;
+    grid-template-areas:
+      "map"
+      "form"
+      "info"
+      "socialMedia";
+    padding: 10rem 10rem 5rem 10rem;
+  }
+  grid-column-gap: 1.5rem;
+
   grid-row-gap: 5rem;
+
   &__info {
+    grid-area: info;
     display: flex;
     justify-content: start;
     flex-direction: column;
     align-items: stretch;
+    @include respond(tab-port) {
+      align-items: center;
+    }
     &-logo {
       width: 20rem;
       height: auto;
     }
     &-text {
       font-size: $default-font-size;
+      @include respond(tab-port) {
+        text-align: center;
+      }
     }
   }
   &__map {
+    display: flex;
+    justify-content: center;
+    grid-area: map;
+
     &-google {
       border: 0;
       width: 40rem;
       height: 20rem;
+      @include respond(tab-port) {
+        width: 80rem;
+        height: 40rem;
+      }
+      @include respond(phone) {
+        width: 60rem;
+        height: 30rem;
+      }
+      @include respond(small-phone) {
+        width: 40rem;
+        height: 20rem;
+      }
+      @include respond(xs) {
+        width: 30rem;
+        height: 15rem;
+      }
     }
   }
+  &__email {
+    grid-area: form;
+  }
   &__socialMedia {
+    grid-area: socialMedia;
     grid-column: 1/4;
     display: flex;
     justify-content: center;

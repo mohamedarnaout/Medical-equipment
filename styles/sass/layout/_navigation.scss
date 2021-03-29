@@ -4,6 +4,12 @@
   align-items: center;
   background-color: $color-grey-light-3;
   padding: 0 10rem;
+  @include respond(tab-land) {
+    padding: 0 7.5rem;
+  }
+  @include respond(tab-port) {
+    padding: 0 6rem;
+  }
   height: 12.5rem;
   z-index: 1;
   &__img {

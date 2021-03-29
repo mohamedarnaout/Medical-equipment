@@ -17,6 +17,10 @@
     width: 50rem;
     text-align: start;
     transform: translate(-50%, 0);
+    @include respond(phone) {
+      transform: translate(0, 0);
+      text-align: center;
+    }
     text-shadow: 0 1rem 2rem rgba($color-black, 0.9);
     &--heading {
       text-align: center;
