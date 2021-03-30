@@ -7,6 +7,7 @@
   flex-direction: column;
   &__name {
     font-size: 2rem;
+    text-align: center;
   }
   &__description {
     font-size: $default-font-size;
