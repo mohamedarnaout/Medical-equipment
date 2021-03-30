@@ -4,11 +4,22 @@
   align-items: center;
   background-color: $color-grey-light-3;
   padding: 0 10rem;
+
   @include respond(tab-land) {
     padding: 0 7.5rem;
   }
   @include respond(tab-port) {
     padding: 0 6rem;
+  }
+
+  @include respond(phone) {
+    padding: 0 4rem;
+  }
+  @include respond(small-phone) {
+    padding: 0 2.5rem;
+  }
+  @include respond(xs) {
+    padding: 0 1.5rem;
   }
   height: 12.5rem;
   z-index: 1;
@@ -18,6 +29,17 @@
   }
   &__item {
     padding: 5rem;
+    @include respond(tab-port) {
+      padding: 4rem;
+    }
+
+    @include respond(phone) {
+      padding: 1.5rem;
+    }
+    @include respond(small-phone) {
+      padding: 1rem;
+    }
+
     &--img {
       margin-right: auto;
     }

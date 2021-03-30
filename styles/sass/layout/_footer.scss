@@ -33,9 +33,28 @@
     &-logo {
       width: 20rem;
       height: auto;
+      @include respond(tab-port) {
+        width: 30rem;
+        padding-bottom: 2rem;
+      }
+      @include respond(phone) {
+        width: 25rem;
+      }
+      @include respond(small-phone) {
+        width: 20rem;
+      }
     }
     &-text {
       font-size: $default-font-size;
+      @include respond(tab-port) {
+        font-size: 2.5rem;
+      }
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+      @include respond(small-phone) {
+        font-size: $default-font-size;
+      }
       @include respond(tab-port) {
         text-align: center;
       }
@@ -59,8 +78,8 @@
         height: 30rem;
       }
       @include respond(small-phone) {
-        width: 40rem;
-        height: 20rem;
+        width: 35rem;
+        height: 17.5rem;
       }
       @include respond(xs) {
         width: 30rem;
@@ -68,7 +87,7 @@
       }
     }
   }
-  &__email {
+  &__form {
     grid-area: form;
   }
   &__socialMedia {

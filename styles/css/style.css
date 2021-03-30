@@ -173,6 +173,18 @@ body {
     color: #ddd;
     font-family: "Roboto Slab", sans-serif;
     font-size: 3rem; }
+    @media only screen and (max-width: 70em) {
+      .form-heading {
+        font-size: 7rem; } }
+    @media only screen and (max-width: 50em) {
+      .form-heading {
+        font-size: 5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .form-heading {
+        font-size: 3rem; } }
+    @media only screen and (max-width: 25em) {
+      .form-heading {
+        font-size: 2rem; } }
   .form-btn {
     margin: 1rem;
     background-color: #2998ff;
@@ -182,6 +194,18 @@ body {
     outline: none;
     position: relative;
     cursor: pointer; }
+    @media only screen and (max-width: 70em) {
+      .form-btn {
+        padding: 2.5rem 10rem; } }
+    @media only screen and (max-width: 50em) {
+      .form-btn {
+        padding: 2rem 8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .form-btn {
+        padding: 1rem 6rem; } }
+    @media only screen and (max-width: 25em) {
+      .form-btn {
+        padding: 1rem 3rem; } }
     .form-btn::before {
       content: "";
       position: absolute;
@@ -202,6 +226,18 @@ body {
     margin-bottom: 1rem;
     padding: 1.5rem 2rem;
     border-radius: 5px; }
+    @media only screen and (max-width: 70em) {
+      .form_input {
+        font-size: 3rem; } }
+    @media only screen and (max-width: 50em) {
+      .form_input {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .form_input {
+        font-size: 1.5rem; } }
+    @media only screen and (max-width: 25em) {
+      .form_input {
+        font-size: 1.3rem; } }
     .form_input:focus {
       outline: none; }
 
@@ -232,8 +268,27 @@ body {
     .footer__info-logo {
       width: 20rem;
       height: auto; }
+      @media only screen and (max-width: 70em) {
+        .footer__info-logo {
+          width: 30rem;
+          padding-bottom: 2rem; } }
+      @media only screen and (max-width: 50em) {
+        .footer__info-logo {
+          width: 25rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .footer__info-logo {
+          width: 20rem; } }
     .footer__info-text {
       font-size: 1.6rem; }
+      @media only screen and (max-width: 70em) {
+        .footer__info-text {
+          font-size: 2.5rem; } }
+      @media only screen and (max-width: 50em) {
+        .footer__info-text {
+          font-size: 2rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .footer__info-text {
+          font-size: 1.6rem; } }
       @media only screen and (max-width: 70em) {
         .footer__info-text {
           text-align: center; } }
@@ -255,13 +310,13 @@ body {
           height: 30rem; } }
       @media only screen and (max-width: 37.5em) {
         .footer__map-google {
-          width: 40rem;
-          height: 20rem; } }
+          width: 35rem;
+          height: 17.5rem; } }
       @media only screen and (max-width: 25em) {
         .footer__map-google {
           width: 30rem;
           height: 15rem; } }
-  .footer__email {
+  .footer__form {
     grid-area: form; }
   .footer__socialMedia {
     grid-area: socialMedia;
@@ -340,11 +395,29 @@ body {
   @media only screen and (max-width: 70em) {
     .navigation {
       padding: 0 6rem; } }
+  @media only screen and (max-width: 50em) {
+    .navigation {
+      padding: 0 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation {
+      padding: 0 2.5rem; } }
+  @media only screen and (max-width: 25em) {
+    .navigation {
+      padding: 0 1.5rem; } }
   .navigation__img {
     height: 10rem;
     width: auto; }
   .navigation__item {
     padding: 5rem; }
+    @media only screen and (max-width: 70em) {
+      .navigation__item {
+        padding: 4rem; } }
+    @media only screen and (max-width: 50em) {
+      .navigation__item {
+        padding: 1.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__item {
+        padding: 1rem; } }
     .navigation__item--img {
       margin-right: auto; }
 
@@ -373,6 +446,10 @@ body {
       @media only screen and (max-width: 50em) {
         .notification__text--1 {
           padding: 1.25rem 1rem 1.25rem 3rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .notification__text--1 {
+          padding: 1.25rem 0 1.25rem 2.5rem;
+          margin-right: auto; } }
     .notification__text--2 {
       padding: 1.25rem 7.5rem;
       margin-right: auto; }
@@ -385,6 +462,10 @@ body {
       @media only screen and (max-width: 50em) {
         .notification__text--2 {
           padding: 1.25rem 1rem 1.25rem 0.5rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .notification__text--2 {
+          padding: 1.25rem 2.5rem 1.25rem 0rem;
+          margin-right: 0; } }
     .notification__text--3 {
       display: flex;
       align-items: center;
@@ -405,6 +486,9 @@ body {
       @media only screen and (max-width: 70em) {
         .notification__text--3 {
           padding: 1.25rem 6rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .notification__text--3 {
+          display: none; } }
 
 .phone {
   transform: scaleX(-1); }
