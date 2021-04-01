@@ -541,6 +541,7 @@ body {
     color: #e1306c; }
 
 .partners {
+  position: relative;
   background-color: #eee;
   padding: 5rem 10rem 0 10rem;
   display: flex;

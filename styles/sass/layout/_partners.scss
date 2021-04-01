@@ -1,4 +1,5 @@
 .partners {
+  position: relative;
   background-color: $color-grey-light-2;
   padding: 5rem 10rem 0 10rem;
   @include respond(tab-land) {

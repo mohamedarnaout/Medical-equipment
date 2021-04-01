@@ -29,7 +29,7 @@ headeer.innerHTML = `
     <div class="navigation">
       <div class="navigation__item navigation__item--img">
       <a href="index.html"> <img
-          src="../pics/LOGO CMES copy.png"
+          src="pics/LOGO CMES copy.png"
           class="navigation__img"
           alt="Compony's LOGO"
         /> </a>
