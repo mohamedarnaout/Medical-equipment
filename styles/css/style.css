@@ -152,6 +152,28 @@ body {
     .u-margin-right-small {
       margin-right: 0.5rem !important; } }
 
+.btn_blue {
+  background-color: #2998ff;
+  color: #fff;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer; }
+  .btn_blue::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid #2998ff;
+    transition: all 0.1s ease-in-out; }
+  .btn_blue:hover::before, .btn_blue:focus::before {
+    top: calc(2px * -2);
+    left: calc(2px * -2);
+    right: calc(2px * -2);
+    bottom: calc(2px * -2); }
+
 .bg-video {
   position: absolute;
   top: 0;
@@ -187,13 +209,7 @@ body {
         font-size: 2rem; } }
   .form-btn {
     margin: 1rem;
-    background-color: #2998ff;
-    color: #fff;
-    padding: 1rem 4rem;
-    border: none;
-    outline: none;
-    position: relative;
-    cursor: pointer; }
+    padding: 1rem 4rem; }
     @media only screen and (max-width: 70em) {
       .form-btn {
         padding: 2.5rem 10rem; } }
@@ -206,20 +222,6 @@ body {
     @media only screen and (max-width: 25em) {
       .form-btn {
         padding: 1rem 3rem; } }
-    .form-btn::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      border: 2px solid #2998ff;
-      transition: all 0.1s ease-in-out; }
-    .form-btn:hover::before, .form-btn:focus::before {
-      top: calc(2px * -2);
-      left: calc(2px * -2);
-      right: calc(2px * -2);
-      bottom: calc(2px * -2); }
   .form_input {
     font-family: "Roboto Slab", sans-serif;
     font-size: 1.3rem;
@@ -242,10 +244,11 @@ body {
       outline: none; }
 
 .footer {
+  position: relative;
   background-color: #333;
   padding: 10rem 20rem 5rem 20rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   grid-template-rows: 2fr, 1fr;
   grid-template-areas: "info map form" "socialMedia socialMedia socialMedia";
   grid-column-gap: 1.5rem;
@@ -381,6 +384,24 @@ body {
   .header__scrolled {
     margin-top: 12.5rem; }
 
+.iheader {
+  height: 30vh;
+  background-image: linear-gradient(to bottom, rgba(76, 100, 90, 0.75), rgba(38, 63, 52, 0.85)), url(../../../pics/TS1.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .iheader__text {
+    transform: translate(0, 0);
+    font-size: 2.5rem;
+    color: #fff; }
+  .iheader__scrolled {
+    margin-top: 12.5rem; }
+
+.body {
+  height: 100vh; }
+
 .navigation {
   display: flex;
   justify-content: space-evenly;
@@ -388,7 +409,7 @@ body {
   background-color: #ddd;
   padding: 0 10rem;
   height: 12.5rem;
-  z-index: 1; }
+  z-index: 100; }
   @media only screen and (max-width: 87em) {
     .navigation {
       padding: 0 7.5rem; } }
@@ -420,6 +441,12 @@ body {
         padding: 1rem; } }
     .navigation__item--img {
       margin-right: auto; }
+  .navigation__link {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.6rem; }
+    .navigation__link:hover {
+      font-size: 1.8rem; }
 
 .scrolled {
   position: fixed;

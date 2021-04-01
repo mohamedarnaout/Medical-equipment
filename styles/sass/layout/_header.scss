@@ -35,3 +35,28 @@
     margin-top: 12.5rem;
   }
 }
+.iheader {
+  height: 30vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-primary-light, 0.75),
+      rgba($color-primary-dark, 0.85)
+    ),
+    url(../../../pics/TS1.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__text {
+    transform: translate(0, 0);
+    font-size: 2.5rem;
+    color: $color_white;
+  }
+  &__scrolled {
+    margin-top: 12.5rem;
+  }
+}
+.body {
+  height: 100vh;
+}

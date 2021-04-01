@@ -1,0 +1,26 @@
+.btn_blue {
+  background-color: $color-tertiary-light;
+  color: $color-white;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    border: 2px solid $color-tertiary-light;
+    transition: all 0.1s ease-in-out;
+  }
+  &:hover::before,
+  &:focus::before {
+    top: calc(2px * -2);
+    left: calc(2px * -2);
+    right: calc(2px * -2);
+    bottom: calc(2px * -2);
+  }
+}
