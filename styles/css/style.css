@@ -187,61 +187,11 @@ body {
     width: 100%;
     object-fit: cover; }
 
-.form {
-  display: flex;
-  align-items: center;
-  flex-direction: column; }
-  .form-heading {
-    color: #ddd;
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 3rem; }
-    @media only screen and (max-width: 70em) {
-      .form-heading {
-        font-size: 7rem; } }
-    @media only screen and (max-width: 50em) {
-      .form-heading {
-        font-size: 5rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .form-heading {
-        font-size: 3rem; } }
-    @media only screen and (max-width: 25em) {
-      .form-heading {
-        font-size: 2rem; } }
-  .form-btn {
-    margin: 1rem;
-    padding: 1rem 4rem; }
-    @media only screen and (max-width: 70em) {
-      .form-btn {
-        padding: 2.5rem 10rem; } }
-    @media only screen and (max-width: 50em) {
-      .form-btn {
-        padding: 2rem 8rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .form-btn {
-        padding: 1rem 6rem; } }
-    @media only screen and (max-width: 25em) {
-      .form-btn {
-        padding: 1rem 3rem; } }
-  .form_input {
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    padding: 1.5rem 2rem;
-    border-radius: 5px; }
-    @media only screen and (max-width: 70em) {
-      .form_input {
-        font-size: 3rem; } }
-    @media only screen and (max-width: 50em) {
-      .form_input {
-        font-size: 2rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .form_input {
-        font-size: 1.5rem; } }
-    @media only screen and (max-width: 25em) {
-      .form_input {
-        font-size: 1.3rem; } }
-    .form_input:focus {
-      outline: none; }
+.form_input {
+  font-family: "Roboto Slab", sans-serif;
+  border-radius: 5px; }
+  .form_input:focus {
+    outline: none; }
 
 .footer {
   position: relative;
@@ -320,7 +270,57 @@ body {
           width: 30rem;
           height: 15rem; } }
   .footer__form {
-    grid-area: form; }
+    grid-area: form;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .footer__form-heading {
+      color: #ddd;
+      font-family: "Roboto Slab", sans-serif;
+      font-size: 3rem; }
+      @media only screen and (max-width: 70em) {
+        .footer__form-heading {
+          font-size: 7rem; } }
+      @media only screen and (max-width: 50em) {
+        .footer__form-heading {
+          font-size: 5rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .footer__form-heading {
+          font-size: 3rem; } }
+      @media only screen and (max-width: 25em) {
+        .footer__form-heading {
+          font-size: 2rem; } }
+    .footer__form-btn {
+      margin: 1rem;
+      padding: 1rem 4rem; }
+      @media only screen and (max-width: 70em) {
+        .footer__form-btn {
+          padding: 2.5rem 10rem; } }
+      @media only screen and (max-width: 50em) {
+        .footer__form-btn {
+          padding: 2rem 8rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .footer__form-btn {
+          padding: 1rem 6rem; } }
+      @media only screen and (max-width: 25em) {
+        .footer__form-btn {
+          padding: 1rem 3rem; } }
+    .footer__form-input {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      padding: 1.5rem 2rem; }
+      @media only screen and (max-width: 70em) {
+        .footer__form-input {
+          font-size: 3rem; } }
+      @media only screen and (max-width: 50em) {
+        .footer__form-input {
+          font-size: 2rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .footer__form-input {
+          font-size: 1.5rem; } }
+      @media only screen and (max-width: 25em) {
+        .footer__form-input {
+          font-size: 1.3rem; } }
   .footer__socialMedia {
     grid-area: socialMedia;
     grid-column: 1/4;
@@ -398,9 +398,6 @@ body {
     color: #fff; }
   .iheader__scrolled {
     margin-top: 12.5rem; }
-
-.body {
-  height: 100vh; }
 
 .navigation {
   display: flex;
@@ -595,3 +592,58 @@ body {
   .company__description {
     font-size: 1.6rem;
     text-align: center; }
+
+.contact {
+  padding: 15rem 15rem 10rem 15rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2rem; }
+  .contact__info {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 10rem; }
+    .contact__info-text {
+      font-size: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .contact__info-text {
+          font-size: 1.6rem; } }
+      .contact__info-text--icon {
+        color: #3e8d6c; }
+  .contact__form {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 0 7.5rem; }
+    .contact__form-group {
+      display: flex;
+      flex-direction: column; }
+      .contact__form-group--label {
+        color: #000;
+        font-size: 2rem; }
+      .contact__form-group--input {
+        color: #000;
+        padding: 0.5rem 2rem;
+        font-size: 2rem; }
+        .contact__form-group--input:focus {
+          border: 3px #375d4d dashed; }
+      .contact__form-group--textarea {
+        color: #000;
+        border-radius: 5px;
+        height: 20rem;
+        padding: 1rem 2rem;
+        border: 2px black solid;
+        font-size: 2rem; }
+        .contact__form-group--textarea:focus {
+          border: 3px #375d4d dashed; }
+    .contact__form-btn {
+      padding: 1rem;
+      border-radius: 5px; }
+      .contact__form-btn::before {
+        content: "";
+        border-radius: 5px; }
+    .contact__form-group:not(:last-child) {
+      margin-bottom: 2rem; }

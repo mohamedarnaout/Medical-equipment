@@ -25,22 +25,20 @@ footer.innerHTML = `<div class="footer__info">
   class="footer__map-google"
 ></iframe>
 </div>
-<div class="footer__form">
-<form action="" class="form">
-  <h1 class="form-heading">News letter</h1>
+<form class="footer__form form">
+  <h1 class="footer__form-heading">News letter</h1>
   <input
     type="email"
     placeholder="E-mail"
-    class="form_input form_input-email"
+    class="footer__form-input form_input"
   />
   <input
     type="text"
     placeholder="Name"
-    class="form_input form_input-name"
+    class="form_input  footer__form-input"
   />
-  <button class="form-btn btn_blue">Sign up Now</button>
+  <button class="footer__form-btn btn_blue">Sign up Now</button>
 </form>
-</div>
 <div class="footer__socialMedia">
 <a class="footer__socialMedia-icon footer__socialMedia-icon-facebook" href="https://www.facebook.com/" target="_blank">
   <i class="fab fa-facebook-f"></i>
